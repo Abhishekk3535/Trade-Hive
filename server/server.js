@@ -18,9 +18,9 @@ app.get("/Health", (req, res) => {
     res.json("API is working fine")
 });
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client", "index.html"));
-});
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "../client", "index.html"));
+// });
 
 app.use("/api/auth", Authrouter);
 

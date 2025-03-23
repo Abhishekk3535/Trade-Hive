@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard | Trade-Hive</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <nav class="sidebar">
+            <h2>Vendor Panel</h2>
+            <ul>
+                <li><a href="#">🏠 Dashboard</a></li>
+                <li><a href="#">📦 Manage Products</a></li>
+                <li><a href="#">📊 Sales Analytics</a></li>
+                <li><a href="#">🔔 Notifications</a></li>
+                <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="dashboard-content">
+            <h1 id="vendorName"></h1>
+
+
+            <section class="analytics">
+                <h2>Sales Overview</h2>
+                <canvas id="salesChart"></canvas>
+            </section>
+
+
+            <section class="products">
+                <h2>Manage Products</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

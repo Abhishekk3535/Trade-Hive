@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Trade-Hive</title>
+    <link rel="stylesheet" href="dashboardUser.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <nav class="sidebar">
+            <h2>User Panel</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">🏠 Dashboard</a></li>
+                <li><a href="#" onclick="showSection('profile')">👤 Profile</a></li>
+                <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-content" id="dashboardSection">
+            <h1 id="userName"></h1>
+
+            <!-- Filter Section -->
+            <div class="filter-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="ratingFilter" onchange="filterProducts()">
+                    <option value="">All Ratings</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+            </div>
+
+            <!-- Product Grid -->
+            <section class="product-grid" id="productGrid"></section>
+        </main>
+
+        <!-- Profile Section -->
+        <main class="profile-section" id="profileSection">
+            <h1>User Profile</h1>
+            <form id="profileForm">
+                <label>Name:</label>
+                <input type="text" id="userName" value="John Doe">
+
+                <label>Email:</label>
+                <input type="email" id="userEmail" value="johndoe@example.com" disabled>
+
+                <label>Phone:</label>
+                <input type="text" id="userPhone" value="1234567890">
+
+                <button type="button" onclick="saveProfile()">Save Changes</button>
+            </form>
+        </main>
+
+    </div>
+
+    <script src="dashboardUser.js"></script>
+</body>
+</html>

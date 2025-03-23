@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade-Hive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Trade Hive</div>
+            <nav class="nav-center">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <!-- <li><a href="#" onclick="loadPage('BMI')">BMI-Calculator</a></li> -->
+                    <li><a href="#" onclick="loadPage('About')">About</a></li>
+                    <li><a href="#" onclick="loadPage('Membership')"></a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <img src="https://thumbs.dreamstime.com/b/person-icon-black-background-person-solid-vector-eps-90447225.jpg"
+                    alt="Profile" class="profile-icon">
+                <a href="./Login-Signup/login.html">Login</a>
+                <a href="./Login-Signup/signup.html">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="Index-Container">
+        <section class="hero">
+            <h1>Welcome</h1>
+            <p>.</p>
+            <button class="cta-button" onclick="getStarted()">Get Started</button>
+        </section>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="https://thecolourmoon.com/assets/images/single-vendor-features-02.png"
+                        alt="Image 1"></div>
+                <div class="swiper-slide"><img
+                        src="https://stylemixthemes.com/wp/wp-content/uploads/sites/2/2020/01/multi-vendor-ecommerce-website.jpg"
+                        alt="Image 2"></div>
+                <div class="swiper-slide"><img
+                        src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/06/Multi-Vendor-Marketplace-for-Shopify-YouTube.png"
+                        alt="Image 3"></div>
+                <div class="swiper-slide"><img
+                        src="https://yaycommerce.com/wp-content/uploads/2020/11/multivendor-marketplace.png"
+                        alt="Image 4"></div>
+            </div>
+
+            <!-- Pagination (dots) -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="features">
+            <div class="feature-box">
+                <h2 onclick="getStarted()">Diverse Product Catalog</h2>
+            </div>
+            <div class="feature-box">
+                <h2 onclick="getStarted()">Real-Time Chat</h2>
+            </div>
+            <div class="feature-box">
+                <h2 onclick="getStarted()">AI-Powered Recommendations</h2>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Watch Our Feedbak Videos</h2>
+            <iframe src="https://drive.google.com/file/d/11x7lABd7Pv7raGj2cPxxslNTN7dn_0Hz/preview" width="640"
+                height="360" allow="autoplay" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Gym Assistant. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src= "script.js"></script>
+
+</body>
+
+</html>

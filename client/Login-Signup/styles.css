@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+}
+
+/* Container Styling */
+.container, .login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2d545e;
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2d545e;
+    box-shadow: 0 0 5px rgba(45, 84, 94, 0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d545e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1b3a42;
+}
+
+/* Links */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #2d545e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Home Button */
+button:nth-of-type(2) {
+    margin-top: 10px;
+    background: #f4a261;
+}
+
+button:nth-of-type(2):hover {
+    background: #e76f51;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container, .login-container {
+        width: 90%;
+    }
+}
